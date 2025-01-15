@@ -1,0 +1,396 @@
+:root {
+    --primary: #1d4ed8;
+    --secodary: #18181b;
+    --textP: #94a3b8;
+    --textall: #fff;
+    --bg: #e2e8f0;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Lato';
+    color: var(--textall);
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .contents {
+    margin: 4rem 0;
+  }
+  header {
+    padding: 20px;
+    background-color: var(--secodary);
+  }
+  .container .brand-menu {
+    width: 50%;
+  }
+  .container .brand-menu ul {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .brand-menu ul li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .container .brand-menu ul li a {
+    text-decoration: none;
+    color: var(--textall);
+    transition: all 300ms ease-in-out;
+  }
+  .container .brand-menu ul li a:hover {
+    color: var(--textP);
+  }
+  .brand-logo h1 a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--primary);
+  }
+  .container .contact-me a {
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    color: var(--textall);
+    background-color: var(--primary);
+    border-radius: 5px;
+  }
+  #hero {
+    padding: 2rem;
+    background-color: var(--secodary);
+  }
+  #hero .container .contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contents .hero-intro {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .contents .hero-intro h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  .contents .hero-intro h2 span#helo {
+    color: var(--primary);
+  }
+  .contents .hero-intro h2 span#nama {
+    font-size: 2rem;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .contents .hero-intro h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .contents .hero-intro p {
+    font-weight: 400;
+    color: var(--textP);
+    margin: 10px 0;
+    line-height: 1.5rem;
+  }
+  .contents .hero-intro .hero-contact {
+    margin-top: 2rem;
+  }
+  .contents .hero-intro a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--textall);
+  }
+  .contents .hero-img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 7px 6px 10px 0 var(--primary);
+  }
+  .contents .hero-img img {
+    max-width: 100%;
+  }
+  #about {
+    padding: 2rem;
+    background-color: var(--textall);
+  }
+  #contact .title,
+  #experience .title,
+  #skill .title,
+  #about .title {
+    text-align: center;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    margin: 2rem 2rem;
+  }
+  #contact .title h1,
+  #experience .title h1,
+  #skill .title h1,
+  #about .title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secodary);
+  }
+  #contact .title p,
+  #experience .title p,
+  #skill .title p,
+  #about .title p {
+    color: var(--textP);
+  }
+  #about .contents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .contents .about-me {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .contents .about-me h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secodary);
+  }
+  .contents .about-me p {
+    margin: 10px 0;
+    line-height: 1.5rem;
+    color: var(--textP);
+  }
+  .contents .about-me .about-sosmed {
+    display: flex;
+    width: 50%;
+  }
+  .about-sosmed .sosmed {
+    width: 80%;
+  }
+  .about-sosmed .sosmed a {
+    font-size: 1.7rem;
+    color: var(--textP);
+  }
+  .about-sosmed .sosmed a:hover {
+    color: var(--primary);
+  }
+  .contents .about-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 4px 5px 2px rgba(0, 0, 0, 0.2);
+  }
+  .contents .about-img img {
+    width: 100%;
+  }
+  #skill {
+    padding: 2rem;
+    background-color: var(--secodary);
+  }
+  #skill .title h1 {
+    color: var(--textall);
+  }
+  #skill .contents {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contents .card-skill {
+    width: 100%;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .card-skill .skill-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .card-skill .skill-img img {
+    max-width: 100%;
+  }
+  .card-skill h1 {
+    margin-bottom: 1rem;
+  }
+  .card-skill p {
+    color: var(--textP);
+    font-weight: lighter;
+    line-height: 1.5rem;
+  }
+  #experience {
+    padding: 2rem;
+    background-color: var(--bg);
+    color: var(--secodary);
+  }
+  #experience .contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card-exper {
+    width: 100%;
+    display: flex;
+    background-color: var(--textall);
+    margin: 10px 0;
+    box-shadow: 4px 5px 10px rgba(29, 78, 216, 0.5);
+  }
+  .card-exper .exper-img {
+    width: 10%;
+    height: 100%;
+    background-size: cover;
+  }
+  .img1 {
+    background-image: url(profile/portfolio/admin.jpg);
+  }
+  .img2 {
+    background-image: url(profile/portfolio/marketing.jpg);
+  }
+  .img3 {
+    background-image: url(profile/portfolio/musik.jpg);
+  }
+  .img4 {
+    background-image: url(profile/portfolio/online.jpg);
+  }
+  .card-exper .exper-conten {
+    padding: 10px;
+    width: 90%;
+  }
+  .card-exper .exper-conten h1 {
+    font-size: 1.5rem;
+  }
+  .card-exper .exper-conten h2 {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: var(--primary);
+  }
+  .card-exper .exper-conten p {
+    line-height: 1.5rem;
+    color: var(--textP);
+  }
+  #contact {
+    padding: 2rem;
+  }
+  #contact .contents {
+    display: flex;
+    justify-content: center;
+  }
+  .form-me {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .form-me label {
+    color: var(--primary);
+    font-weight: 700;
+  }
+  textarea,
+  .form-me input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--textP);
+  }
+  .form-me .submit {
+    margin: 1rem 0;
+  }
+  .form-me a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--textall);
+    background-color: var(--primary);
+  }
+  footer {
+    background-color: var(--secodary);
+    padding: 2rem;
+    color: var(--textP);
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  footer p span {
+    color: var(--primary);
+  }
+  @media (min-width: 768px) {
+    #hero .container .contents {
+      gap: 20px;
+    }
+    .contents .hero-intro h2 {
+      font-size: 2rem;
+    }
+    .contents .hero-intro h2 span#nama {
+      font-size: 3rem;
+    }
+    .about-sosmed .sosmed {
+      width: 15%;
+    }
+    .contents .card-skill {
+      width: 40%;
+      margin: 10px 10px;
+    }
+    footer {
+      font-size: 1rem;
+    }
+  }
+  @media (min-width: 992px) {
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .container .brand-menu ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 3rem;
+      align-items: center;
+      padding: 20px;
+    }
+    #hero .container .contents {
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+    .contents .hero-intro {
+      width: 50%;
+    }
+    .contents .hero-img {
+      width: 40%;
+    }
+    .contents .hero-img img {
+      max-width: 100%;
+    }
+    .about-sosmed .sosmed {
+      width: 20%;
+    }
+    #about .contents {
+      flex-wrap: nowrap;
+    }
+    .contents .about-img,
+    .contents .about-me {
+      width: 50%;
+      margin: 0 10px;
+    }
+    .card-exper {
+      width: 40%;
+      margin: 10px 10px;
+    }
+    .card-exper .exper-img {
+      width: 10%;
+      height: 100%;
+      background-size: cover;
+    }
+    .form-me {
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
+  @media (min-width: 1200px) {
+    #skill .contents {
+      flex-wrap: nowrap;
+    }
+  }
+  
